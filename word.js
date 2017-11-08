@@ -5,7 +5,7 @@ var Word = function(word){
 	this.letters = [];
 	this.guessed = false;
 
-	//that is used when this does not refer to the object from the outermost function
+	//that is used when 'this' does not refer to the object from the outermost function
 	var that = this;
 
 	/*gets all of the letters from the phrase to be guessed and creates new objects from each letter using the Letter constructor.*/
@@ -47,7 +47,6 @@ var Word = function(word){
 			var currentLetter = letter.showLetter();
 			show += currentLetter;
 		});
-
 		return show;
 	}
 }
